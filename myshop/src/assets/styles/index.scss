@@ -1,0 +1,23 @@
+@import 'normalize.css';
+@import './variables.css';
+
+html{
+    font-size: calc(100vw/375);    
+}
+body{
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    vertical-align: top;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}

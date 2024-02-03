@@ -1,0 +1,78 @@
+<script setup lang="ts">
+import type { SvgName } from '~virtual/svg-component';
+
+const categorData: Array<{
+  id: number;
+  name: string;
+  icon: SvgName;
+}> = [
+  {
+    id: 1,
+    name: '手机数码',
+    icon: 'icon-smartphone',
+  },
+  {
+    id: 2,
+    name: '家居生活',
+    icon: 'icon-chair',
+  },
+  {
+    id: 3,
+    name: '服饰鞋帽',
+    icon: 'icon-shirt',
+  },
+  {
+    id: 4,
+    name: '电脑办公',
+    icon: 'icon-computer',
+  },
+  {
+    id: 5,
+    name: '个护化妆',
+    icon: 'icon-personalcare',
+  },
+  {
+    id: 6,
+    name: '母婴用品',
+    icon: 'icon-baby',
+  },
+  {
+    id: 7,
+    name: '食品饮料',
+    icon: 'icon-food',
+  },
+  {
+    id: 8,
+    name: '运动户外',
+    icon: 'icon-sports',
+  },
+];
+</script>
+<template>
+  <div class="category-list">
+    <div class="category-item" v-for="item in categorData" :key="item.id">
+      <svg-icon :name="item.icon"></svg-icon>
+      <span>{{ item.name }}</span>
+    </div>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+.category-list {
+  margin-top: 20rem;
+  border: solid #ddd;
+  border-width: 1px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 80rem;
+  align-items: center;
+  .category-item {
+    font-size: 30rem;
+    text-align: center;
+    span {
+      font-size: 16rem;
+      display: block;
+    }
+  }
+}
+</style>
