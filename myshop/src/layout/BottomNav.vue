@@ -9,17 +9,19 @@
 
 <style lang="scss" scoped>
 .bottom-nav {
-  border-top: 0.1px solid #ddd;
   width: 375rem;
   height: var(--bottom-nav-height);
   display: flex;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #ddd;
   a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: calc(1 / 3) * 100%;
-    font-size: 25rem;
+    font-size: 26rem;
   }
 }
 </style>

@@ -59,19 +59,16 @@ const categorData: Array<{
 
 <style lang="scss" scoped>
 .category-list {
-  margin-top: 20rem;
-  border: solid #ddd;
-  border-width: 1px 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 80rem;
-  align-items: center;
   .category-item {
     font-size: 30rem;
     text-align: center;
+
     span {
-      font-size: 16rem;
       display: block;
+      font-size: 14rem;
     }
   }
 }

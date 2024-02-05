@@ -1,7 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const scrollEle = ref(null);
+//获取滚动容器scrollEle
+
+provide(SCROLL_ELE, scrollEle);
+</script>
 
 <template>
-  <div>
+  <div ref="scrollEle">
     <h1 class="title">My Shop</h1>
     <CategoryList></CategoryList>
     <ProductList></ProductList>

@@ -13,7 +13,7 @@ interface Product{
 interface Page<T>{
 data:Array<T>
 totleItem:number
-totalPage:number
+totalPages:number
 currentPage:number
 //每页数据数
 itemsPerPage:number
