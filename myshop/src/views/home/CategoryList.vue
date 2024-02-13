@@ -50,10 +50,15 @@ const categorData: Array<{
 </script>
 <template>
   <div class="category-list">
-    <div class="category-item" v-for="item in categorData" :key="item.id">
+    <router-link
+      :to="`/home/${item.id}`"
+      class="category-item"
+      v-for="item in categorData"
+      :key="item.id"
+    >
       <svg-icon :name="item.icon"></svg-icon>
       <span>{{ item.name }}</span>
-    </div>
+    </router-link>
   </div>
 </template>
 
@@ -65,7 +70,9 @@ const categorData: Array<{
   .category-item {
     font-size: 30rem;
     text-align: center;
-
+    &.router-link-active {
+      color: var(--highlight-color);
+    }
     span {
       display: block;
       font-size: 14rem;

@@ -8,6 +8,7 @@ provide(SCROLL_ELE, scrollEle);
 <template>
   <div ref="scrollEle">
     <h1 class="title">My Shop</h1>
+    <SeachTab></SeachTab>
     <CategoryList></CategoryList>
     <ProductList></ProductList>
   </div>

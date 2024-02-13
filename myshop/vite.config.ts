@@ -15,10 +15,10 @@ export default defineConfig({
       prefix:"icon"
     }),
     AutoImport({
-     imports:["vue","vue-router",'pinia'],
+     imports:["vue","vue-router",'pinia',{"@vueuse/core":["createFetch","useInfiniteScroll","refDebounced"]}],
      dts:"./src/types/auto-imports.d.ts",
      dirs:['./src/**/*'],
-     vueTemplate:true,
+     vueTemplate:true, 
     }),
     Components({
       dirs:["./src/layout","./src/components","./src/views"],

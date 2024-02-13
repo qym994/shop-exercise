@@ -9,6 +9,10 @@ const routes: RouteRecordRaw[] = [
         path:'home',
         alias:'',
         component: () => import('@/views/home/Home.vue'),
+        children:[{
+          path:':catagoryId',
+          component:()=>import('@/views/home/Home.vue'),
+        }],
       },
       {
         path: 'cart',

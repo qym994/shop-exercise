@@ -22,6 +22,9 @@
     align-items: center;
     width: calc(1 / 3) * 100%;
     font-size: 26rem;
+    &.router-link-active {
+      color: var(--highlight-color);
+    }
   }
 }
 </style>
