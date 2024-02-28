@@ -65,13 +65,18 @@ watchEffect(() => {
 </script>
 <template>
   <div class="product-list">
-    <div class="product" v-for="item in products" :key="item.id">
+    <router-link
+      :to="`/product/${item.id}`"
+      class="product"
+      v-for="item in products"
+      :key="item.id"
+    >
       <div class="img-box">
         <img :src="item.image_url" :alt="item.name" />
       </div>
       <h2 class="name">{{ item.name }}</h2>
       <h3 class="price">{{ item.price }}</h3>
-    </div>
+    </router-link>
   </div>
   <p class="msg" v-show="products.length == 0">没有找到！库鲁西QAQ！</p>
   <p class="msg" v-show="isFetching">正在加载啦！</p>

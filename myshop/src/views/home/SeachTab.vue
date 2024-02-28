@@ -20,7 +20,7 @@ const keywords = storeToRefs(store);
   text-align: center;
   .input {
     font-size: 20rem;
-    width: 90%;
+    width: 80%;
     margin: 20rem;
     border: 1rem solid black;
     outline: none;

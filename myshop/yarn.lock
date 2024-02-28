@@ -596,6 +596,16 @@
   resolved "https://registry.npmmirror.com/@vue/tsconfig/-/tsconfig-0.5.1.tgz#3124ec16cc0c7e04165b88dc091e6b97782fffa9"
   integrity sha512-VcZK7MvpjuTPx2w6blwnwZAu5/LgBUtejFOi3pPGQFXQN5Ela03FUtd2Qtg4yWGGissVL0dr6Ro1LfOFh+PCuQ==
 
+"@vueuse/core@10.8.0":
+  version "10.8.0"
+  resolved "https://registry.npmmirror.com/@vueuse/core/-/core-10.8.0.tgz#680f88cf2f92abfc7a3d69cdf5b030f6ff9e07ee"
+  integrity sha512-G9Ok9fjx10TkNIPn8V1dJmK1NcdJCtYmDRyYiTMUyJ1p0Tywc1zmOoCQ2xhHYyz8ULBU4KjIJQ9n+Lrty74iVw==
+  dependencies:
+    "@types/web-bluetooth" "^0.0.20"
+    "@vueuse/metadata" "10.8.0"
+    "@vueuse/shared" "10.8.0"
+    vue-demi ">=0.14.7"
+
 "@vueuse/core@^10.7.2":
   version "10.7.2"
   resolved "https://registry.npmmirror.com/@vueuse/core/-/core-10.7.2.tgz#78917803a29a0bca1803a6521fdf7ff873f6e72c"
@@ -606,10 +616,24 @@
     "@vueuse/shared" "10.7.2"
     vue-demi ">=0.14.6"
 
+"@vueuse/integrations@^10.8.0":
+  version "10.8.0"
+  resolved "https://registry.npmmirror.com/@vueuse/integrations/-/integrations-10.8.0.tgz#c597c1ad5696b3ac3c7a8bae1a85c3301b395712"
+  integrity sha512-sw3P/7cXOfNLQfERp7P0IJ2ODjLE2C3BGXpBQJQkS309c1jbJak9yu4EnY70WaZjkj53aeWSFU6BbHrUxXJ7SA==
+  dependencies:
+    "@vueuse/core" "10.8.0"
+    "@vueuse/shared" "10.8.0"
+    vue-demi ">=0.14.7"
+
 "@vueuse/metadata@10.7.2":
   version "10.7.2"
   resolved "https://registry.npmmirror.com/@vueuse/metadata/-/metadata-10.7.2.tgz#ba0187ce138c287fd80301afc5b0d6a97e563633"
   integrity sha512-kCWPb4J2KGrwLtn1eJwaJD742u1k5h6v/St5wFe8Quih90+k2a0JP8BS4Zp34XUuJqS2AxFYMb1wjUL8HfhWsQ==
+
+"@vueuse/metadata@10.8.0":
+  version "10.8.0"
+  resolved "https://registry.npmmirror.com/@vueuse/metadata/-/metadata-10.8.0.tgz#a0d828ae90feed8084870578c56f459897f7cbb3"
+  integrity sha512-Nim/Vle5OgXcXhAvGOgkJQXB1Yb+Kq/fMbLuv3YYDYbiQrwr39ljuD4k9fPeq4yUyokYRo2RaNQmbbIMWB/9+w==
 
 "@vueuse/shared@10.7.2":
   version "10.7.2"
@@ -617,6 +641,13 @@
   integrity sha512-qFbXoxS44pi2FkgFjPvF4h7c9oMDutpyBdcJdMYIMg9XyXli2meFMuaKn+UMgsClo//Th6+beeCgqweT/79BVA==
   dependencies:
     vue-demi ">=0.14.6"
+
+"@vueuse/shared@10.8.0":
+  version "10.8.0"
+  resolved "https://registry.npmmirror.com/@vueuse/shared/-/shared-10.8.0.tgz#56e778919a3de9f2552bcbf3c09163e6d1035f1a"
+  integrity sha512-dUdy6zwHhULGxmr9YUg8e+EnB39gcM4Fe2oKBSrh3cOsV30JcMPtsyuspgFCUo5xxFNaeMf/W2yyKfST7Bg8oQ==
+  dependencies:
+    vue-demi ">=0.14.7"
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
@@ -714,6 +745,11 @@ assign-symbols@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmmirror.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
   integrity sha512-Q+JC7Whu8HhmTdBph/Tq59IoRtoy6KAm5zzPv00WdujX82lbAL8K7WVjne7vdCsAmbF4AYaDOPyO3k0kl8qIrw==
+
+async-validator@^4:
+  version "4.2.5"
+  resolved "https://registry.npmmirror.com/async-validator/-/async-validator-4.2.5.tgz#c96ea3332a521699d0afaaceed510a54656c6339"
+  integrity sha512-7HhHjtERjqlNbZtqNqy2rckN/SpOOlmDliet+lP7k+eKZEjPk3DgyeU9lIXLdeLz0uBbbVp+9Qdow9wJWgwwfg==
 
 atob@^2.1.2:
   version "2.1.2"
@@ -3008,7 +3044,7 @@ vue-demi@>=0.14.5:
   resolved "https://registry.npmmirror.com/vue-demi/-/vue-demi-0.14.6.tgz#dc706582851dc1cdc17a0054f4fec2eb6df74c92"
   integrity sha512-8QA7wrYSHKaYgUxDA5ZC24w+eHm3sYCbp0EzcDwKqN3p6HqtTCGR/GVsPyZW92unff4UlcSh++lmqDWN3ZIq4w==
 
-vue-demi@>=0.14.6:
+vue-demi@>=0.14.6, vue-demi@>=0.14.7:
   version "0.14.7"
   resolved "https://registry.npmmirror.com/vue-demi/-/vue-demi-0.14.7.tgz#8317536b3ef74c5b09f268f7782e70194567d8f2"
   integrity sha512-EOG8KXDQNwkJILkx/gPcoL/7vH+hORoBaKgGe+6W7VFMvCYJfmF2dGbvgDroVnI8LU7/kTu8mbjRZGBU1z9NTA==

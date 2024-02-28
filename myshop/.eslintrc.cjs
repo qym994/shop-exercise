@@ -11,5 +11,10 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest'
+  },
+  "eslintConfig": {
+    "rules": {
+        "no-unused-vars":"off"
+      }
   }
 }

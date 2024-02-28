@@ -11,6 +11,7 @@ provide(SCROLL_ELE, scrollEle);
     <SeachTab></SeachTab>
     <CategoryList></CategoryList>
     <ProductList></ProductList>
+    <BackTop></BackTop>
   </div>
 </template>
 

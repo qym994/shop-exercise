@@ -1,6 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
+  <notification-box></notification-box>
   <router-view class="main"></router-view>
   <bottom-nav></bottom-nav>
 </template>

@@ -15,7 +15,7 @@ export default defineConfig({
       prefix:"icon"
     }),
     AutoImport({
-     imports:["vue","vue-router",'pinia',{"@vueuse/core":["createFetch","useInfiniteScroll","refDebounced"]}],
+     imports:["vue","vue-router",'pinia',{"@vueuse/core":["useLocalStorage","createFetch","useInfiniteScroll","refDebounced","useScroll"]}],
      dts:"./src/types/auto-imports.d.ts",
      dirs:['./src/**/*'],
      vueTemplate:true, 
